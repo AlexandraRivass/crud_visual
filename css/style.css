@@ -12,7 +12,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-color: aliceblue;
 }
 
 .fondo_portada{
@@ -58,7 +57,6 @@ body{
 }
 
 
-
 .color_propietario {
     background-color: #f8be41 !important;
 }
@@ -74,9 +72,8 @@ body{
 
 /* Color fondo de la pagina*/
 .color_fondo{
-    background-color: #ebf6f8;
+    background-color: #faf6f6;
 }
-
 .espacio_contenedor{
     margin-left: 2%;
     margin-right: 3%;
@@ -96,6 +93,14 @@ body{
     margin-bottom: 3%;
     padding: 4%;
 }
+.margenes1{
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    padding: 2%;
+}
+
 
 .seccion_animal{
     margin-top: 8% !important;
@@ -133,6 +138,7 @@ body{
     width: 420px;
     height: 360px;
     border-radius: 90px 0px 90px 0px; /*arriba-izquierda | arriba-derecha | abajo-derecha | abajo-izquierda*/
+    box-shadow: #f7c318 0px 1px 8px, #f8b43f 0px 1px 8px;
 
 }
 .color_casilla{
@@ -144,16 +150,25 @@ body{
 .color_casilla2{
     background-color: #d5fac9;
 }
-
+.color_casilla3{
+    background-color: #f5fbcb;
+}
 
 /* Estilos de los botones de CRUD */
 .estilo_botones{
     width: 100%;
     background-color: #ffcf68;
     border-radius: 4px;
+    padding: 5px;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    border-color: white;
+    box-shadow: #000000 0px 1px 4px, #000000 0px 1px 3px;
+
 }
 
 .estilo_botones:hover{
+    border-color: #000000;
     background: #f8be41;
     box-shadow: #ff8558 0px 1px 4px, #a14242 0px 1px 3px;
 }
@@ -203,4 +218,109 @@ body{
 
 .estilo_sombreado{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+
+.estilo_sombreado1{
+    box-shadow: #bcbcbd 0px 1px 8px, #bfbdbd 0px 1px 8px;
+}
+
+.mapa{
+    border-radius: 8px;
+}
+
+
+
+
+
+
+/* ===== ARTÍCULOS RECIENTES ===== */
+.articulos_intro {
+    background: white;
+    border-radius: 16px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 320px;
+}
+
+.articulos_icono {
+    background: #e8f5ee;
+    border-radius: 12px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #2d6a4f;
+    margin-bottom: 18px;
+}
+
+.articulos_intro p {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1a3a3a;
+    margin: 0;
+}
+
+.articulo_card {
+    background: #d6eee0;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.articulo_card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.articulo_body {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.articulo_body h5 {
+    font-weight: 800;
+    font-size: 0.95rem;
+    color: #1a3a3a;
+    margin-bottom: 8px;
+}
+
+.articulo_body p {
+    font-size: 0.82rem;
+    color: #3a5a50;
+    flex: 1;
+}
+
+/* Botones nav del carousel */
+.articulos_prev,
+.articulos_next {
+    position: static;
+    background: white !important;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    color: #1a3a3a !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    float: right;
+    margin-left: 8px;
+}
+
+.articulos_prev:hover,
+.articulos_next:hover {
+    background: #1a3a3a !important;
+    color: white !important;
 }
